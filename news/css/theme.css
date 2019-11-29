@@ -1,0 +1,72 @@
+/* Vazir Fonts */
+@font-face {
+  font-family: 'vazir';
+  src: url('../font/vazir/vazir.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'vazir-bold';
+  src: url('../font/vazir/vazir-bold.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'vazir-light';
+  src: url('../font/vazir/vazir-light.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'vazir-fd';
+  src: url('../font/vazir/vazir-light-fd.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Variables */
+/* Typography */
+h1 {
+  font-family: 'vazir-bold', sans-serif;
+  font-size: 1.2rem;
+  color: #2d2d2d;
+}
+h2 {
+  font-family: vazir-bold, sans-serif;
+  font-size: 1rem;
+  color: #2d2d2d;
+}
+p,
+a,
+li {
+  font-family: 'vazir', sans-serif;
+  font-size: 0.9rem;
+  color: #494949;
+}
+p.font-f {
+  font-family: 'vazir-fd', sans-serif;
+  font-size: 0.9rem;
+  color: #494949;
+}
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'vazir', sans-serif;
+  direction: rtl;
+}
+main {
+  text-align: right;
+}
+a:hover {
+  color: #00C3FF;
+}
+.btn {
+  font-family: 'vazir-bold', sans-serif;
+}
+.btn.btn-primary {
+  background-color: #0077FF !important;
+}
+/*# sourceMappingURL=theme.css.map */

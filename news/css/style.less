@@ -1,0 +1,136 @@
+
+
+/* Theme */
+@import "theme.less";
+
+/* Header section */
+nav {
+  background-color: @primary-color;
+  .navbar-brand {
+    margin-left: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  .collapse:last-child {
+    margin-left: 1rem;
+  }
+}
+
+
+/* First Section: Last News*/
+.last-news-container {
+  padding: 5rem 0;
+  .last-news {
+    padding: 2rem 0;
+    min-height: 550px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 1rem;
+    grid-auto-rows: minmax(150px, auto);
+    .item {
+      h2, p {
+        color: white;
+      }
+      .card {
+        height: 100%;
+        background-image:linear-gradient(to top, black 1%, transparent 30%), url("../img/behdad.jpg");
+        background-size: cover;
+        cursor: pointer;
+        .card-body {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          p {
+            margin-bottom: 0;
+          }
+        }
+      }
+      .carousel-wrapper {
+        overflow: hidden;
+        width: 100%;
+
+        .carousel {
+          width: inherit;
+
+          .carousel-inner {
+            width: inherit;
+
+            .carousel-item {
+              width: inherit;
+
+              .view {
+                width: inherit;
+
+                img {
+                  width: inherit;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .item:nth-child(1) {
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+  }
+}
+
+
+/* Second section: News */
+.news {
+  padding: 5rem 0;
+  .nav-tabs {
+    margin: 0 15px;
+  }
+  .tab-content {
+    .tab-pane {
+      .card {
+        margin-bottom: 1rem;
+      }
+    }
+    padding: 2rem 0;
+  }
+}
+
+.article {
+  padding: 5rem 0;
+  .carousel {
+    padding: 2rem 0;
+    .carousel-inner {
+      .carousel-item {
+        .cards-wrapper {
+          display: flex;
+          justify-content: space-between;
+          .card {
+            margin: 5px 10px;
+          }
+        }
+      }
+      .carousel-control-next-icon, .carousel-control-prev-icon {
+        padding: 20px;
+        border-radius: 50%;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+    }
+  }
+}
+
+/* MEDIA QUERY */
+/***************/
+/***************/
+/***************/
+/***************/
+/***************/
+
+
+@media screen and (max-width: 540px) {
+  .last-news-container {
+    .last-news {
+      .item:nth-child(1) {
+        grid-column: span 1;
+      }
+    }
+  }
+}

@@ -1,0 +1,117 @@
+
+
+
+
+/* Vazir Fonts */
+@font-face {
+  font-family: 'vazir';
+  src: url('../font/vazir/vazir.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'vazir-bold';
+  src: url('../font/vazir/vazir-bold.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'vazir-light';
+  src: url('../font/vazir/vazir-light.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'vazir-fd';
+  src: url('../font/vazir/vazir-light-fd.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Variables */
+@primary-color: #0077FF;
+@secondary-color: #00C3FF;
+@header-font-color: #2d2d2d;
+@regular-font-color: #494949;
+
+/* Typography */
+h1 {
+  font-family: 'vazir-bold', sans-serif;
+  font-size: 1.2rem;
+  color: @header-font-color;
+}
+
+h2 {
+  font-family: vazir-bold, sans-serif;
+  font-size: 0.8rem;
+  color: @header-font-color;
+}
+
+p, a, li, .tab-pane {
+  font-family: 'vazir', sans-serif;
+  font-size: 0.8rem !important;
+  color: @regular-font-color;
+  line-height: 1.6rem !important;
+}
+
+p.font-f {
+  font-family: 'vazir-fd', sans-serif;
+  font-size: 1rem;
+  color: @regular-font-color;
+}
+
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'vazir', sans-serif;
+  direction: rtl;
+}
+
+main {
+  text-align: right;
+  scroll-behavior: smooth;
+}
+
+a:hover {
+  color: @secondary-color;
+}
+
+.btn {
+  font-family: 'vazir-bold', sans-serif;
+}
+
+.btn.btn-primary {
+  background-color: @primary-color !important;
+}
+
+.nav-tabs {
+  border-bottom: 0 !important;
+  width: 100%;
+  padding: 1rem;
+  border-radius: .25rem;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.16),0 2px 10px 0 rgba(0,0,0,.12);
+  background-color: @primary-color;
+  .nav-item {
+    &:first-child {
+      .nav-link {
+        font-family: 'vazir-bold', serif;
+      }
+    }
+    .nav-link {
+      border-radius: 0.25rem;
+      margin-left: 2px;
+      color: white;
+    }
+    .active {
+      color: @regular-font-color;
+    }
+  }
+}
