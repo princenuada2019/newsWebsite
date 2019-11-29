@@ -95,6 +95,7 @@ a:hover {
 /* Header section */
 nav {
   background-color: #0077FF;
+  text-align: right;
 }
 nav .navbar-brand {
   margin-left: 1rem;
@@ -188,6 +189,10 @@ nav .collapse:last-child {
   padding: 20px;
   border-radius: 50%;
   background-color: rgba(0, 0, 0, 0.5);
+}
+/* Footer section */
+footer {
+  background-color: #0077FF;
 }
 /* MEDIA QUERY */
 /***************/
